@@ -145,8 +145,8 @@ with tab4:
         if st.button("Unlock Premium ($9.99/month)"):
             if user_email:
                 # Create dynamic success URL with user's email; update the domain for your deployment.
-                success_url = f"http://localhost:8501/?payment=success&email={user_email}"
-                cancel_url = "http://localhost:8501/?payment=cancel"  # Update as needed
+                success_url = f"https://your-app-url.streamlit.app/?payment=success&email={user_email}" 
+                cancel_url = "https://your-app-url.streamlit.app/?payment=cancel"
                 payment_url = create_checkout_session(999, "usd", success_url, cancel_url)
                 st.success("Redirecting to Stripe for payment...")
                 st.markdown(f'<meta http-equiv="refresh" content="0;url={payment_url}" />', unsafe_allow_html=True)
