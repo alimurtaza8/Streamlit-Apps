@@ -3,3 +3,6 @@ firebase-admin
 google-generativeai
 stripe
 zxcvbn
+matplotlib
+seaborn
+pandas
