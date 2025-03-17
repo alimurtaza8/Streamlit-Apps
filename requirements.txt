@@ -2,3 +2,4 @@ streamlit
 firebase-admin
 google-generativeai
 stripe
+zxcvbn-python==4.4.28
